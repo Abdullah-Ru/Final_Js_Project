@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #143357;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    position: relative;
+    width: 150px;
+    left: 5%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+    top: 6%;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: #D4E8FF;
+    font-weight: lighter;
+    font-size: 2.7em;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #c7e1ff;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -1%;
+    gap: 12px;
+}
+
+#button1 {
+    font-weight: 900;
+    width: 160px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #e3f0ff;
+}
+
+#button1:hover {
+    background-color: #e3f0ff;
+    color: #1f5189;
+}
+
+#button {
+    width: 160px;
+    height: 55px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #e3f0ff;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #1b579c;
+}
+
+.image3 {
+    background: #31566d;
+    position: relative;
+    text-align: center;
+    height: 800px;
+    color: rgb(40, 39, 39);
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image3 h2 {
+    color: #ffffff;
+    text-align: center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    font-weight: bolder;
+    font-size: 8em;
+    line-height: 54px;
+}
+
+.card {
+    border: #192e3a solid 5px;
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    background: #545B77;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+    font-size: 3em;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.card-avatar {
+    background-image: url(/IMG/profile\(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --size: 230px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
+
+.card-avatar1 {
+    background-image: url(/IMG/profile\(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --size: 230px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
+
+.card-social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 1;
+    transition: transform .2s ease, opacity .2s ease;
+    padding-top: 10px;
+}
+
+.card-social__item {
+    list-style: none;
+}
+
+.card-social__item svg {
+    display: block;
+    padding-bottom: 10px;
+    width: 50px;
+    fill: #ffffff;
+    cursor: pointer;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.card-subtitle {
+    color: #ffffff;
+    font-size: 0.8em;
+    padding-top: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 50px #23232333;
+}
+
+.card-social__item svg:hover {
+    fill: #bababa;
+    transform: scale(1.1);
+}
