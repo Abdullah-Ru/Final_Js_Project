@@ -81,4 +81,4 @@ div2.appendChild(div2_div2)
 div2_div2.setAttribute('class', 'img2')
 let div2_div2_img1 = document.createElement('img')
 div2_div2.appendChild(div2_div2_img1)
-div2_div2_img1.src = '../IMG/Home1.png'
+div2_div2_img1.src = '../IMG/Home3.png'
