@@ -82,12 +82,6 @@ nav a::after {
     transition: transform 0.30s ease-out;
 }
 
-nav a:hover::after {
-    text-decoration-color: #FFD100;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-}
-
 /**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
 
 .button {
@@ -129,47 +123,14 @@ nav a:hover::after {
     color: #1b579c;
 }
 
-.image {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    color: white;
-    height: 630px;
-    gap: 10rem;
-}
-
-.img1 {
-    margin-top: 10%;
-    margin-right: 1%;
-}
-
-.img2 img{
-    width: 100%;
-    height: 600px;
-    position: relative;
-    top: 50px;
-}
-
-.image h2 {
-    color: #e4e4e4;
-    content: "";
-    font-weight: bolder;
-    font-size: 10em;
-    line-height: 54px;
-}
-
-.image p {
-    color: #e3f0ff;
-    font-weight: lighter;
-    content: "";
-    margin-top: 10%;
-    font-size: 6.4em;
-    line-height: 54px;
-    width: 700px;
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
 }
 
 .image1 {
+    margin-top: 7%;
     background: transparent;
     position: relative;
     text-align: center;
@@ -213,23 +174,13 @@ nav a:hover::after {
     line-height: 54px;
 }
 
-#B {
-    margin-top: 8%;
-    font-weight: 900;
-    width: 250px;
-    height: 85px;
-    border: 3px solid #e4e4e4;
-    border-radius: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: #e3f0ff;
-    font-size: 3.3em;
-    padding: auto;
-    font-weight: 550;
-    color: #274C77;
-}
-
-.image #B:hover {
-    background: transparent;
-    color: #e3f0ff;
-}
+.my-slider-progress {
+    background: #ccc;
+  }
+  
+  .my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+  }

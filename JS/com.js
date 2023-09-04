@@ -50,35 +50,28 @@ div1_a2.href = '/HTML/log.html'
 div1_a2_button.setAttribute('id', 'button1')
 div1_a2_button.textContent = 'انشاء حساب'
 //////////////////////////////////////////////////////////////////////////
-for (let i = 1; i <= 5; i++) {
-    let br = document.createElement('br')
-    document.body.appendChild(br)
-}
-//////////////////////////////////////////////////////////////////////////
-let div2 = document.createElement('div')
 
-let div2_div1 = document.createElement('div')
-let div2_div1_h2 = document.createElement('h2')
-let div2_div1_p = document.createElement('p')
-let div2_div1_a1 = document.createElement('a')
-let div2_div1_button = document.createElement('button')
-div2.setAttribute('class', 'image')
-document.body.appendChild(div2)
-div2_div1.setAttribute('class', 'img1')
-div2.appendChild(div2_div1)
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel', {
+          cover      : true,
+          heightRatio: 0.5,
+    } ).mount();
+  } );
 
-div2_div1.appendChild(div2_div1_h2)
-div2_div1.appendChild(div2_div1_p)
-div2_div1.appendChild(div2_div1_a1)
-div2_div1.appendChild(div2_div1_button)
-div2_div1_h2.textContent = 'منـــــــاصب'
-div2_div1_p.textContent = 'لتجربة توظيف افضل'
-div2_div1_a1.href = '#section'
-div2_div1_button.setAttribute('id', 'B')
-div2_div1_button.textContent = 'تصفّح'
-let div2_div2 = document.createElement('div')
-div2.appendChild(div2_div2)
-div2_div2.setAttribute('class', 'img2')
-let div2_div2_img1 = document.createElement('img')
-div2_div2.appendChild(div2_div2_img1)
-div2_div2_img1.src = '../IMG/Home3.png'
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#card-carousel', {
+          perPage    : 2,
+          breakpoints: {
+              640: {
+                  perPage: 1,
+              },
+          },
+    } ).mount();
+  } );
+
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#fullscreen-carousel', {
+          width : '100vw',
+          height: '100vh',
+    } ).mount();
+  } );
