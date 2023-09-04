@@ -71,7 +71,8 @@
   }
   
   .box-form .right .inputs {
-    right: 20%;
+    position: relative;
+    bottom: 50px;
   }
   
   .box-form .right input {
@@ -104,6 +105,8 @@
     background-color: #D9DCD6;
     margin-right: 29%;
     transition: .3s;
+    position: relative;
+    bottom: 100px;
   }
   
   .box-form .right button:hover {
@@ -115,4 +118,9 @@
   .box-form .right .remember-me--forget-password p {
     margin-bottom: 20%;
     font-size: 1.7em;
+  }
+  .text-checkbox {
+    position: relative;
+    bottom: 100px;
+    left: 430px;
   }

@@ -20,14 +20,16 @@
 
 
 		<div class="right">
-			<h5>انشاء حساب</h5>
+			<h5>تسجيل الدخول</h5>
 			<div class="inputs">
-				<input type="text" placeholder="الاسم">
-				<br>
-                <input type="password" placeholder="الايميل المستخدم">
-                <br>
-				<input type="password" placeholder="كلمة المرور ">
-                <p> عندك حساب؟ <a href="/HTML/sign.html">سجّل دخولك</a> ما راح ياخذ من وقتك شيء </p>
+				<form id="Login">
+					<input type="text" placeholder="اسم المستخدم" id="username" required>
+					<br>
+					<br>
+					<input type="password" placeholder="كلمة المرور " id="password" required>
+					<input type="submit" value="سجّل دخولك" id="sub">
+				</form>
+                <p> ماعندك حساب؟ <a href="/HTML/sign.html">انشئ حسابك</a> ما راح ياخذ من وقتك شيء </p>
 			</div>
 
 			<br><br>
@@ -35,22 +37,16 @@
 			<div class="remember-me--forget-password">
 
 				<label>
-					<input type="checkbox">
 					<span class="text-checkbox" style="font-size: 1.7em;">تذكرني</span>
+					<input type="checkbox" class="text-checkbox">
 				</label>
 
 			</div>
-
-			<br>
-
-			<a href="/HTML/Home.html">
-				<button>انشئ حسابك</button>
-			</a>
-
 		</div>
 
 	</div>
-
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="/JS/log.js"></script>
 </body>
 
 </html>

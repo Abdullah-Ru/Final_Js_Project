@@ -43,10 +43,10 @@ div1_a1.appendChild(div1_a1_button)
 div1.appendChild(div1_a2)
 div1_a2.appendChild(div1_a2_button)
 div1.setAttribute('class', 'button')
-div1_a1.href = '#'
+div1_a1.href = '/HTML/log.html'
 div1_a1_button.setAttribute('id', 'button')
 div1_a1_button.textContent = 'تسجيل الدخول'
-div1_a2.href = '#'
+div1_a2.href = '/HTML/sign.html'
 div1_a2_button.setAttribute('id', 'button1')
 div1_a2_button.textContent = 'انشاء حساب'
 //////////////////////////////////////////////////////////////////////////
@@ -56,7 +56,6 @@ for (let i = 1; i <= 5; i++) {
 }
 //////////////////////////////////////////////////////////////////////////
 let div2 = document.createElement('div')
-
 let div2_div1 = document.createElement('div')
 let div2_div1_h2 = document.createElement('h2')
 let div2_div1_p = document.createElement('p')
@@ -66,7 +65,6 @@ div2.setAttribute('class', 'image')
 document.body.appendChild(div2)
 div2_div1.setAttribute('class', 'img1')
 div2.appendChild(div2_div1)
-
 div2_div1.appendChild(div2_div1_h2)
 div2_div1.appendChild(div2_div1_p)
 div2_div1.appendChild(div2_div1_a1)
@@ -82,3 +80,20 @@ div2_div2.setAttribute('class', 'img2')
 let div2_div2_img1 = document.createElement('img')
 div2_div2.appendChild(div2_div2_img1)
 div2_div2_img1.src = '../IMG/Home3.png'
+/////////////////////////////////////////////////////////////////////////////
+let username = localStorage.getItem('username')
+let username_h2 = document.createElement('h3')
+header.appendChild(username_h2)
+username_h2.setAttribute('id', "userh2")
+if(username) {
+    div1_a1_button.remove()
+    div1_a2_button.remove()
+    username_h2.textContent = `${username} `
+    let userimg = document.createElement('img')
+    header.appendChild(userimg)
+    userimg.setAttribute('id', 'userimg')
+    userimg.src = '/IMG/avatar.png'
+
+} else {
+    window.location.href = '/HTML/Home.html'
+}
