@@ -27,28 +27,132 @@ html {
 #IMG1 {
     position: relative;
     width: 150px;
-    bottom: -20px;
-    left: -10px;
-
+    left: 5%;
 }
+
+/**  رأٍس الصفحة **/
+
+header {
+    top: 4%;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+    gap: 3rem;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #D4E8FF;
+    font-weight: lighter;
+    font-size: 2.4em;
+    position: relative;
+    right: 35px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #c7e1ff;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -1%;
+    gap: 12px;
+}
+
+#button1 {
+    font-weight: 900;
+    width: 150px;
+    height: 55px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #e3f0ff;
+    position: relative;
+    /* left: -50px; */
+}
+
+#button1:hover {
+    background-color: #e3f0ff;
+    color: #1f5189;
+}
+
+#button {
+    width: 160px;
+    height: 55px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #e3f0ff;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #1b579c;
+    position: relative;
+    /* left: -40px; */
+}
+
 #Profile1 {
     border-style: solid;
-    width: 400px;
+    width: 500px;
     position: absolute;
-    left: 1100px;
+    left: 1032px;
     top: 100px;
     border: none;
     background-color: #e4e4e4;
-    border-radius:10px ;
     border-width: 0px;
     box-shadow: #e4e4e4 0px 0px 5px;
 }
 .Avatar {
     border-radius: 9999px;
-    width: 100px;
+    width: 130px;
     display: inline-block;
     position: relative;
-    left: -150px;
+    left: -185px;
     padding-top: 20px;
     
 }
@@ -58,7 +162,7 @@ html {
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    font-size: 1.8em;
+    font-size: 2.2em;
     top: -40px;
 
 }
@@ -69,6 +173,7 @@ html {
     align-items: center;
     padding-bottom: 50px;
     top: -40px;
+    font-size: 1.2em;
 }
 .button {
     display: flex;
@@ -99,17 +204,15 @@ html {
     background-color: #e3f0ff;
     color: #1f5189;
 }
+
 #Profile2 {
-    border-style: solid;
-    width: 400px;
+    width: 500px;
     position: absolute;
-    left: 1100px;
-    top: 440px;
-    height: 200px;
-    border: none;
+    left: 1030px;
+    top: 445px;
+    height: 260px;
+    border-top: 6px #143357 solid;
     background-color: #e4e4e4;
-    border-radius:10px ;
-    border-width: 0px;
     box-shadow: #e4e4e4 0px 0px 5px;
 }
 #Profile2 i {
@@ -125,16 +228,14 @@ html {
     color: gray;
 }
 #Profile3 {
-    border-style: solid;
     width:500px;
     position: absolute;
-    left: 525px;
-    top: 200px;
-    height: 310px;
-    border: none;
+    left: 530px;
+    top: 100px;
+    height: 610px;
+    border-right: #143357 solid 4px;
+    border-left: #143357 solid 4px;
     background-color: #e4e4e4;
-    border-radius:10px ;
-    border-width: 0px;
     box-shadow: #e4e4e4 0px 0px 5px;
 }
 #Profile3 h2 {
@@ -156,17 +257,13 @@ html {
     top: -5px;
 }
 #Profile4 {
-    border-style: solid;
-    width: 400px;
-    right: 1100px;
+    width: 525px;
+    right: 65.4%;
     position: absolute;
     top: 100px;
-    border: none;
     background-color: #e4e4e4;
-    border-radius:10px ;
-    border-width: 0px;
-    box-shadow: #e4e4e4 0px 0px 5px;
-    height: 550px;
+    border: none;
+    height: 610px;
     font-size: 2.2em;
 
 }
@@ -176,7 +273,8 @@ html {
     top: 10px;
 }
 #Profile4 p {
-    font-size: 0.8em;
+    font-size: 1.3em;
+    width: 98%;
     text-align: center;
 
 }
