@@ -52,6 +52,8 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 15px;
     gap: 3rem;
 }
 
@@ -67,6 +69,7 @@ nav a {
     font-weight: lighter;
     font-size: 2.4em;
     position: relative;
+    right: 35px;
 }
 
 nav a::after {
@@ -100,8 +103,8 @@ nav a:hover::after {
 
 #button1 {
     font-weight: 900;
-    width: 160px;
-    height: 50px;
+    width: 150px;
+    height: 55px;
     border: 3px solid #ffffff;
     border-radius: 25px;
     transition: all 0.3s;
@@ -110,6 +113,8 @@ nav a:hover::after {
     font-size: 1.7em;
     font-weight: 900;
     color: #e3f0ff;
+    position: relative;
+    /* left: -50px; */
 }
 
 #button1:hover {
@@ -127,6 +132,8 @@ nav a:hover::after {
     font-size: 1.7em;
     font-weight: 900;
     color: #1b579c;
+    position: relative;
+    /* left: -40px; */
 }
 
 .image {
@@ -169,6 +176,50 @@ nav a:hover::after {
     width: 700px;
 }
 
+.image1 {
+    background: transparent;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 690px;
+}
+
+.image1 img {
+    content: "";
+    position: relative;
+    width: 33%;
+    top: 11%;
+    right: 30%;
+}
+
+.image1 h2 {
+    text-align: right;
+    color: #ffffff;
+    content: "";
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    height: auto;
+    /* right: 7%; */
+    top: 12%;
+    font-weight: bolder;
+    font-size: 10em;
+    line-height: 54px;
+}
+
+.image1 p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 45%;
+    right: 5%;
+    top: 33%;
+    font-size: 2.5em;
+    line-height: 54px;
+}
+
 #B {
     margin-top: 8%;
     font-weight: 900;
@@ -198,6 +249,99 @@ nav a:hover::after {
 #userh2 {
     font-size: 2.3em;
     color: #e3f0ff;
-    position: relative;
-    right: 80px;
+    /* position: relative;
+    right: 80px; */
 }
+.dropbtn {
+    width: 140px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    right: 80px
+  }
+  .dropdown-content {
+    color: white;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #e3f0ff;
+    min-width: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 75px;
+    
+  }
+  
+  .dropdown-content a {
+    color: #143357;
+    padding: 12px 16px;
+    font-size: 1.4em;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  
+  .dropdown-content a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0px;
+    background-color: #143357;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+  
+  }
+  
+  .dropdown-content a:hover::after {
+    /* text-decoration-color: #FFD100; */
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  .dropdown-content button {
+    color: #143357;
+    padding: 12px 16px;
+    /* display:block; */
+    font-size: 1.1em;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    background-color: #143357;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+  
+  }
+  
+  .dropdown-content button:hover::after {
+    /* text-decoration-color: #FFD100; */
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    /* text-decoration-color: #FFD100; */
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:transparent;
+    color: transparent;
+  }

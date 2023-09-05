@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #143357;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    position: relative;
+    width: 150px;
+    bottom: -20px;
+    left: -10px;
+
+}
+#Profile1 {
+    border-style: solid;
+    width: 400px;
+    position: absolute;
+    left: 1100px;
+    top: 100px;
+    border: none;
+    background-color: #e4e4e4;
+    border-radius:10px ;
+    border-width: 0px;
+    box-shadow: #e4e4e4 0px 0px 5px;
+}
+.Avatar {
+    border-radius: 9999px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    left: -150px;
+    padding-top: 20px;
+    
+}
+#user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    font-size: 1.8em;
+    top: -40px;
+
+}
+#Profile1 h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    top: -40px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -1%;
+    gap: 20px;
+}
+
+#buttonprofile {
+    font-weight: 900;
+    width: 120px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: #143357;
+    position: relative;
+    /* left: -50px; */
+    top: 90px;
+}
+
+#buttonprofile:hover {
+    background-color: #e3f0ff;
+    color: #1f5189;
+}
+#Profile2 {
+    border-style: solid;
+    width: 400px;
+    position: absolute;
+    left: 1100px;
+    top: 440px;
+    height: 200px;
+    border: none;
+    background-color: #e4e4e4;
+    border-radius:10px ;
+    border-width: 0px;
+    box-shadow: #e4e4e4 0px 0px 5px;
+}
+#Profile2 i {
+    position: relative;
+    left: -360px;
+    top: 40px;
+}
+#Profile2 p {
+    position: relative;
+    right: 15px;
+    top: 15px;
+    font-size: 1.7em;
+    color: gray;
+}
+#Profile3 {
+    border-style: solid;
+    width:500px;
+    position: absolute;
+    left: 525px;
+    top: 200px;
+    height: 310px;
+    border: none;
+    background-color: #e4e4e4;
+    border-radius:10px ;
+    border-width: 0px;
+    box-shadow: #e4e4e4 0px 0px 5px;
+}
+#Profile3 h2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: 22px;
+    right: 7px;
+}
+#Profile3 p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    top: -5px;
+}
+#Profile4 {
+    border-style: solid;
+    width: 400px;
+    right: 1100px;
+    position: absolute;
+    top: 100px;
+    border: none;
+    background-color: #e4e4e4;
+    border-radius:10px ;
+    border-width: 0px;
+    box-shadow: #e4e4e4 0px 0px 5px;
+    height: 550px;
+    font-size: 2.2em;
+
+}
+#Profile4 h2 {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+#Profile4 p {
+    font-size: 0.8em;
+    text-align: center;
+
+}
