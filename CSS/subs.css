@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #143357;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    position: relative;
+    width: 150px;
+    left: 5%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+    top: 6%;
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: #D4E8FF;
+    font-weight: lighter;
+    font-size: 2.7em;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    background-color: #c7e1ff;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -1%;
+    gap: 12px;
+}
+
+#button1 {
+    font-weight: 900;
+    width: 160px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #e3f0ff;
+}
+
+#button1:hover {
+    background-color: #e3f0ff;
+    color: #1f5189;
+}
+
+#button {
+    width: 160px;
+    height: 55px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #e3f0ff;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #1b579c;
+}
+
+.h2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.h2 img {
+    width: 500px;
+}
+
+.Cardsfather {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .card {
+    display: block;
+    width: 320px;
+    height: 440px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgb(17,59,107);
+    background: radial-gradient(circle, rgba(17,59,107,1) 14%, rgba(217,220,214,1) 100%);  
+    transition: .3s;
+    top: 30px;
+  
+  }
+  
+  .content {
+    padding: 25px;
+  }
+  
+  .content .price {
+    color: #D9DCD6;
+    font-weight: 800;
+    font-size: 80px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+  }
+  
+  .content .description {
+    color: #D9DCD6;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #143357;
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  
+  /* الازرار التي مكانها داخل وسم سكشن */
+  
+  section button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: #D9DCD6;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #143357;
+    border-radius: 0.5rem;
+    width: 70%;
+    margin-top: 20px;
+    transition: .3s;
+  }
+  
+  section button:hover {
+    background-color: transparent;
+    border: solid 3px #143357;
+    color: #143357;
+  }
+  
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+
+footer {
+    margin-top: 7%;
+    background: rgb(20, 51, 87);
+    background: linear-gradient(180deg, rgba(20, 51, 87, 1) 19%, rgba(217, 220, 214, 1) 100%);
+    text-align: center;
+    width: 100%;
+    height: 235px;
+    position: relative;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 6%;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #143357;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الصفحات */
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
