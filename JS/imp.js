@@ -50,7 +50,7 @@ div1_a2.href = '/HTML/log.html'
 div1_a2_button.setAttribute('id', 'button1')
 div1_a2_button.textContent = 'انشاء حساب'
 //////////////////////////////////////////////////////////////////////////
-for (let i = 1; i <= 1; i++) {
+for (let i = 1; i <= 5; i++) {
     let br = document.createElement('br')
     document.body.appendChild(br)
 }
