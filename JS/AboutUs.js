@@ -49,3 +49,4 @@ div1_a1_button.textContent = 'تسجيل الدخول'
 div1_a2.href = '/HTML/sign.html'
 div1_a2_button.setAttribute('id', 'button1')
 div1_a2_button.textContent = 'انشاء حساب'
+///////////////////////////////////////////////////////////////////

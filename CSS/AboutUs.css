@@ -33,7 +33,7 @@ html {
 /**  رأٍس الصفحة **/
 
 header {
-    top: 5%;
+    top: 6%;
     width: 100%;
     height: 5vh;
     display: flex;
@@ -50,11 +50,9 @@ nav {
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 15px;
-    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 /**  الكلام الي بالشريط **/
@@ -62,14 +60,13 @@ nav {
 nav a {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     color: #D4E8FF;
     font-weight: lighter;
-    font-size: 2.4em;
+    font-size: 2.7em;
     position: relative;
-    right: 35px;
 }
 
 nav a::after {
@@ -85,12 +82,6 @@ nav a::after {
     transition: transform 0.30s ease-out;
 }
 
-nav a:hover::after {
-    text-decoration-color: #FFD100;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-}
-
 /**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
 
 .button {
@@ -103,8 +94,8 @@ nav a:hover::after {
 
 #button1 {
     font-weight: 900;
-    width: 150px;
-    height: 55px;
+    width: 160px;
+    height: 50px;
     border: 3px solid #ffffff;
     border-radius: 25px;
     transition: all 0.3s;
@@ -113,8 +104,6 @@ nav a:hover::after {
     font-size: 1.7em;
     font-weight: 900;
     color: #e3f0ff;
-    position: relative;
-    /* left: -50px; */
 }
 
 #button1:hover {
@@ -132,12 +121,107 @@ nav a:hover::after {
     font-size: 1.7em;
     font-weight: 900;
     color: #1b579c;
-    position: relative;
-    /* left: -40px; */
 }
-#aosh1 {
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+.image1 {
+    background: #b1b1b1;
     position: relative;
     text-align: center;
-    top: 100px;
-    color: #e3f0ff;
+    color: white;
+    top: 150px;
+    height: 410px;
+    width: 70%;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.image1 img {
+    content: "";
+    position: relative;
+    width: 30%;
+    height: 70%;
+    top: 12%;
+    right: 28%;
+}
+
+.image1 h2 {
+    text-align: right;
+    color: #143357;
+    content: "";
+    position: absolute;
+    /* width: 80%; */
+    right: 2%;
+    height: auto;
+    /* right: 7%; */
+    top: 12%;
+    font-weight: bolder;
+    font-size: 5em;
+    line-height: 54px;
+}
+
+.image1 p {
+    color: #143357;
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 45%;
+    right: 5%;
+    top: 33%;
+    font-size: 2.5em;
+    line-height: 54px;
+}
+.image2 {
+    background: #b1b1b1;
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 310px;
+    height: 350px;
+    width: 70%;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.image2 img {
+    content: "";
+    position: relative;
+    width: 35%;
+    height: 75%;
+    top: 12%;
+    right: 25%;
+}
+
+.image2 h2 {
+    text-align: right;
+    color: #143357;
+    content: "";
+    position: absolute;
+    /* width: 80%; */
+    right: 2%;
+    height: auto;
+    /* right: 7%; */
+    top: 12%;
+    font-weight: bolder;
+    font-size: 5em;
+    line-height: 54px;
+}
+
+.image2 p {
+    color: #143357;
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 45%;
+    right: 5%;
+    top: 33%;
+    font-size: 2.5em;
+    line-height: 54px;
 }
