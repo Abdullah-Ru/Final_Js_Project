@@ -110,11 +110,10 @@ if (username) {
     dropdown.appendChild(dropdowndiv)
     dropdowndiv.appendChild(dropdowna)
     dropdowndiv.appendChild(dropdownbutton)
+    nav_a3.textContent ='طوّر'
+    nav_a3.href = '/HTML/imp.html'
     dropdownbutton.addEventListener('click', function Logout() {
         localStorage.clear()
         window.location.href = '/HTML/Home.html'
     })
-
-} else {
-    window.location.href = '/HTML/Home.html'
-}
+} 

@@ -26,11 +26,11 @@ nav_a2.textContent = 'شركائنا'
 nav_a3.textContent = 'الوظائف'
 nav_a4.textContent = 'عن شركتنا'
 nav_a5.textContent = 'تواصل معنا'
-nav_a1.href = '#'
-nav_a2.href = '#'
+nav_a1.href = '/HTML/Home.html'
+nav_a2.href = '/HTML/com.html'
 nav_a3.href = '#'
-nav_a4.href = '#'
-nav_a5.href = '#'
+nav_a4.href = '/HTML/AboutUs.html'
+nav_a5.href = '/HTML/contact.html'
 //////////////////////////////////////////////////////////////////////
 let div1 = document.createElement('div')
 let div1_a1 = document.createElement('a')
