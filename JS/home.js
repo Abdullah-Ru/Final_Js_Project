@@ -81,8 +81,8 @@ let div2_div2_img1 = document.createElement('img')
 div2_div2.appendChild(div2_div2_img1)
 div2_div2_img1.src = '../IMG/Home3.png'
 /////////////////////////////////////////////////////////////////////////////
-let username = localStorage.getItem('username')
-let username_h2 = document.createElement('h3')
+// let username = localStorage.getItem('username')
+// let username_h2 = document.createElement('h3')
 
 if (username) {
     div1_a1_button.remove()
@@ -116,4 +116,4 @@ if (username) {
         localStorage.clear()
         window.location.href = '/HTML/Home.html'
     })
-} 
+}

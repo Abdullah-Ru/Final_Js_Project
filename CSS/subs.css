@@ -219,27 +219,54 @@ nav a:hover::after {
   }
 
 
-footer {
-    margin-top: 7%;
-    background: rgb(20, 51, 87);
-    background: linear-gradient(180deg, rgba(20, 51, 87, 1) 19%, rgba(217, 220, 214, 1) 100%);
+  footer {
+    margin-top: 12%;
+    background: rgb(20,51,87);
+    background: linear-gradient(180deg, rgba(20,51,87,1) 19%, rgba(217,220,214,1) 100%);   
     text-align: center;
     width: 100%;
-    height: 235px;
     position: relative;
-}
+  }
 
-.img {
+  footer .row {
+    width: 100%;
+    color: #143357;
+    font-size: 2.5em;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1%;
+  }
+  
+  footer .row a {
+    text-decoration: none;
+    color: #143357;
+    transition: 0.5s;
+    font-size: 0.75em;
+  }
+  
+  footer .row a:hover {
+    color: #05172b76;
+  }
+  
+  footer .row ul {
+    width: 100%;
+  }
+  
+  .img {
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     padding-top: 6%;
-}
-
-/**  ايقونات برامج التواصل الاجتماعي **/
-
-.socialContainer {
+  }
+  
+  /**  ايقونات برامج التواصل الاجتماعي **/
+  
+  .socialContainer {
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -249,59 +276,59 @@ footer {
     justify-content: center;
     overflow: hidden;
     transition-duration: .3s;
-}
-
-/* instagram*/
-.containerOne:hover {
+  }
+  
+  /* instagram*/
+  .containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
-}
-
-/* twitter*/
-.containerTwo:hover {
+  }
+  
+  /* twitter*/
+  .containerTwo:hover {
     background-color: #00acee;
     transition-duration: .3s;
-}
-
-/* linkdin*/
-.containerThree:hover {
+  }
+  
+  /* linkdin*/
+  .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
-}
-
-/* Whatsapp*/
-.containerFour:hover {
+  }
+  
+  /* Whatsapp*/
+  .containerFour:hover {
     background-color: #128C7E;
     transition-duration: .3s;
-}
-
-.socialContainer:active {
+  }
+  
+  .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
-}
-
-.socialSvg {
+  }
+  
+  .socialSvg {
     width: 17px;
-}
-
-.socialSvg path {
+  }
+  
+  .socialSvg path {
     fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
+  }
+  
+  .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
-}
-
-/* انيميشن الصفحات */
-
-@keyframes slide-in-top {
+  }
+  
+  /* انيميشن الصفحات */
+  
+  @keyframes slide-in-top {
     0% {
-        transform: translateY(-50px);
-        opacity: 0;
+      transform: translateY(-50px);
+      opacity: 0;
     }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+  
+      100% {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }

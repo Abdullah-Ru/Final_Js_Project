@@ -187,7 +187,7 @@ nav a:hover::after {
 .image1 img {
     content: "";
     position: relative;
-    width: 33%;
+    width: 63%;
     top: 11%;
     right: 30%;
 }
@@ -346,4 +346,137 @@ nav a:hover::after {
   .dropdown:hover .dropbtn {
     background-color:transparent;
     color: transparent;
+  }
+
+  .h2 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .h2 h1 {
+    font-size: 8em;
+    color: #ede0d4;
+    top: 20%;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+
+  footer {
+    margin-top: 12%;
+    background: rgb(20,51,87);
+    background: linear-gradient(180deg, rgba(20,51,87,1) 19%, rgba(217,220,214,1) 100%);   
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  footer .row {
+    width: 100%;
+    color: #143357;
+    font-size: 2.5em;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1%;
+  }
+  
+  footer .row a {
+    text-decoration: none;
+    color: #143357;
+    transition: 0.5s;
+    font-size: 0.75em;
+  }
+  
+  footer .row a:hover {
+    color: #05172b76;
+  }
+  
+  footer .row ul {
+    width: 100%;
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 6%;
+  }
+  
+  /**  ايقونات برامج التواصل الاجتماعي **/
+  
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #143357;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  /* انيميشن الصفحات */
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+      100% {
+          transform: translateY(0);
+          opacity: 1;
+      }
   }

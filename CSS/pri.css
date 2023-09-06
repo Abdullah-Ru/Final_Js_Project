@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+  font-weight: normal;
+  font-family: 'Markazi Text', serif;
+  background: #143357;
+  color: #D9DCD6;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+  position: relative;
+  width: 150px;
+  left: 5%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+  top: 5%;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  background: transparent;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 15px;
+  gap: 3rem;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #D4E8FF;
+  font-weight: lighter;
+  font-size: 2.4em;
+  position: relative;
+  right: 35px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #c7e1ff;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+  text-decoration-color: #FFD100;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -1%;
+  gap: 12px;
+}
+
+#button1 {
+  font-weight: 900;
+  width: 150px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.7em;
+  font-weight: 900;
+  color: #e3f0ff;
+  position: relative;
+  /* left: -50px; */
+}
+
+#button1:hover {
+  background-color: #e3f0ff;
+  color: #1f5189;
+}
+
+#button {
+  width: 160px;
+  height: 55px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #e3f0ff;
+  font-size: 1.7em;
+  font-weight: 900;
+  color: #1b579c;
+  position: relative;
+  /* left: -40px; */
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 8em;
+}
+
+h2 {
+  margin-top: 10%;
+  font-size: 3em;
+  line-height: 84px;
+  margin-right: 1%;
+}
+
+h3 {
+  font-size: 2em;
+  margin-right: 1%;
+  width: 90%;
+}
+
+footer {
+  margin-top: 8%;
+  background: rgb(20,51,87);
+  background: linear-gradient(180deg, rgba(20,51,87,1) 19%, rgba(217,220,214,1) 100%);   
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+footer .row {
+  width: 100%;
+  color: #143357;
+  font-size: 2.5em;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 1%;
+}
+
+footer .row a {
+  text-decoration: none;
+  color: #143357;
+  transition: 0.5s;
+  font-size: 0.75em;
+}
+
+footer .row a:hover {
+  color: #05172b76;
+}
+
+footer .row ul {
+  width: 100%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-top: 6%;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #143357;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الصفحات */
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
